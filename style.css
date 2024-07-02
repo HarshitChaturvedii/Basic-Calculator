@@ -1,0 +1,182 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 13fr 1fr ;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(./MyriadPro-Regular.otf);
+
+  }
+
+#calculatorPos{
+    background-color: black;
+    border-radius: 20px;
+}
+.white{
+    background-color: #a8a4a4;
+    text-align: center ;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orange{
+    background-color: #ff9404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#upperHeader{
+    grid-area: 1/1/1/4;
+    
+}
+
+#Calculator{
+    grid-area: 2/1/2/4;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1fr ;
+    grid-template-rows: 1fr;
+}
+#lowerFooter{
+    grid-area: 3/1/3/4;
+}
+#calculatorPos{
+    grid-area: 1/2/1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr 1fr ;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.display{
+    grid-area: 1/1/1/2;
+}
+.first{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#zero{
+    grid-area: 1/1/1/3 ;
+    border-radius: 100px;
+}
+.first div{
+    border-radius: 100px;
+    margin: 6px;
+    font-family: myFirstFont;
+    font-weight: bolder;
+    text-align: center ;
+    font-size: 28px;
+}
+#division{
+    font-size: 36px;
+}
+.grey{
+    background-color: #383434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 70;
+    font-size: 30px;
+}
+#zero{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 70;
+    font-size: 30px;
+}
+.first div:hover{
+    opacity: 0.7;
+    cursor:default;
+}
+.display{
+    color: white;
+}
+#upperHeader{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    
+}
+img{
+    height: 60px;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.display{
+    font-size: 70px;
+    padding: 10px;
+    display: flex;
+    font-family: myFirstFont;
+    opacity: 0.7;
+   justify-content: end;
+    align-items: end; 
+    text-align: right;
+    overflow: scroll;
+}
+.puj{
+    color: white;
+    font-size: 70px;
+    padding: 10px;
+    display: flex;
+    direction: rtl;
+    font-family: myFirstFont;
+    opacity: 0.7;
+    overflow: scroll;
+    align-items: center;
+}
+@media (max-width : 1324px) {
+    #Calculator{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    #calculatorPos{
+        height: 380px ;
+        width: 250px;
+       
+    }
+    #upperHeader{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 50px;
+        padding: 10px;
+        display: flex;
+        font-family: myFirstFont;
+        opacity: 0.7;
+       justify-content: end;
+        align-items: end; 
+        text-align: right;
+        overflow-x: scroll;
+    }
+    .puj{
+        font-size: 50px;
+        overflow-x: scroll;
+     
+    }
+    .first div{
+        font-size: 20px;
+        gap: 0px;
+    }
+    #division{
+        font-size: 20px;
+    }
+}
